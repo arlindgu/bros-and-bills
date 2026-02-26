@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bros & Bills
 
-## Getting Started
+A trip expense splitting app for planning and sharing costs with friends. Add expenses, split them per person or as a flat rate, track accommodation, set budgets, and export a summary as an image to share with your group.
 
-First, run the development server:
+## Features
+
+- Add and manage trip expenses with per-person or flat-rate splitting
+- Track accommodation with link, price, and number of nights
+- Set a budget per person and see totals at a glance
+- Add custom info fields for any trip details
+- Export the full trip summary as a PNG image
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun dev      # Start development server (Turbopack)
+bun build    # Production build
+bun start    # Start production server
+bun lint     # Run ESLint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: Next.js (App Router)
+- **React**: 19 with React Compiler
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI**: shadcn/ui
+- **Package Manager**: Bun
